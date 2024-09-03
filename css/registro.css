@@ -1,0 +1,410 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #f2efef;
+    background-image: url(/images/registro.webp);
+    background-size: cover;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+
+.nav {
+    background-color: #7200eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: fixed;
+    height: 85px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ nav {
+    display: block;
+}
+
+.nav a:hover {
+    color: #07dc3c;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.title h1{
+    margin-left: -15px;
+}
+
+.titleWord{
+    font-size: 24px;
+    font-weight: bold;
+    color: 333333;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title img {
+    width: 100px;
+    height: 57px;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 17px;
+}
+
+/* termina el nav */
+
+/*comienzo FormRegistro */
+
+.containerForm{
+    margin-left: 30%;
+    margin-top: 10%;
+    display: grid;
+    width: 30%;
+    background-color: rgba(68, 58, 58, 0.712);
+    padding: 5%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+  
+form {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ece9f2;
+  }
+
+  button {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #ece9f2;
+    margin-left: 25%;
+  }
+  
+  input:focus,
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px rgba(1, 255, 22, 0.844);
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #7200eb;
+    color: white;
+    margin-top: 1.5rem;
+  }
+  
+  button:hover {
+    background-color: #552d8a;
+  }
+/*Fin formRegistro*/
+
+
+/* footer */
+
+footer {
+    background-color: #7200eb;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+
+  /*Media querys*/
+
+
+  @media (max-width: 1030px) {
+
+    body{
+      background-repeat: no-repeat;
+    }
+
+    form {
+        margin: 2rem 0;
+        width: 100%;
+        display: grid;
+        margin-top: -3%;
+    }
+
+    .containerForm {
+      margin-left: 14%;
+      margin-top: 21%;
+      display: grid;
+      width: 57%;
+      background-color: rgba(68, 58, 58, 0.712);
+      padding: 5%;
+      border-radius: 30px;
+      padding-right: 10%;
+      margin-bottom: 5%;
+  }
+
+  footer {
+    background-color: #7200eb;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 24%;
+}
+  }
+
+  @media (max-width: 920px) {
+
+    .containerForm {
+      margin-left: 14%;
+      margin-top: 21%;
+      display: grid;
+      width: 57%;
+      background-color: rgba(68, 58, 58, 0.712);
+      padding: 5%;
+      border-radius: 30px;
+      padding-right: 10%;
+      margin-bottom: 0%;
+  }
+
+    footer {
+        background-color: #7200eb;
+        color: white;
+        padding: 20px;
+        font-weight: bold;
+        margin-top: 33%;
+    }
+}
+
+  @media (max-width: 850px) {
+
+    body{
+      background-repeat: no-repeat;
+    }
+
+    form {
+        margin: 2rem 0;
+        width: 100%;
+        display: grid;
+        margin-top: -3%;
+    }
+
+    .containerForm {
+      margin-left: 14%;
+      margin-top: 21%;
+      display: grid;
+      width: 57%;
+      background-color: rgba(68, 58, 58, 0.712);
+      padding: 5%;
+      border-radius: 30px;
+      padding-right: 10%;
+      margin-bottom: 5%;
+  }
+
+  footer {
+    background-color: #7200eb;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 19%;
+}
+  }
+
+  @media (max-width: 770px) {
+
+    body{
+      background-repeat: no-repeat;
+    }
+
+    form {
+        margin: 2rem 0;
+        width: 100%;
+        display: grid;
+        margin-top: -12%;
+    }
+
+    .containerForm {
+      margin-left: 14%;
+      margin-top: 21%;
+      display: grid;
+      width: 57%;
+      background-color: rgba(68, 58, 58, 0.712);
+      padding: 5%;
+      border-radius: 30px;
+      padding-right: 10%;
+      margin-bottom: 5%;
+  }
+  }
+
+  @media (max-width: 569px) {
+
+    body{
+      background-repeat: no-repeat;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 13px;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #7200eb;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    .containerForm {
+      margin-left: 14%;
+      margin-top: 31%;
+      display: grid;
+      width: 57%;
+      background-color: rgba(68, 58, 58, 0.712);
+      padding: 5%;
+      border-radius: 30px;
+      padding-right: 10%;
+      margin-bottom: 5%;
+  }
+
+  form {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    margin-top: -9%;
+}
+  }
+
+
+  @media (max-width: 320px) {
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 13px;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+  }
+
+  nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #7200eb;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  nav a {
+      margin-bottom: 10px;
+  }
+
+  form {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    margin-top: -12%;
+}
+
+.containerForm {
+  margin-left: 8%;
+  margin-top: 35%;
+  display: grid;
+  width: 71%;
+  background-color: rgba(68, 58, 58, 0.712);
+  padding: 5%;
+  border-radius: 30px;
+  margin-bottom: 15%;
+  padding-right: 12%;
+}
+
+  }

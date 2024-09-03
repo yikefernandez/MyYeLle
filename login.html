@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="shortcut icon" href="/images/ico-paquete.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta property="og:title" content="Ye-LLe Envios" />
+  <meta property="og:type" content="Web de envios a todo el Mundo" />
+  <meta property="og:description" content="Envia tus paquetes a donde lo necesites, rapido y seguro."/>
+  <meta property="og:image" content="https://enviosyelle.netlify.app/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+  <title>Iniciar sesión</title>
+</head>
+<body>
+    <header class="nav">
+        <div class="title">
+          <a href="index.html"><img src="/images/YelleNav.png" alt="Icono" /></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="barNav">
+          <a href="/index.html">Inicio</a>
+          <a href="/about.html">Quienes somos</a>
+          <a href="/contacto.html">Contactanos</a>
+          <a href="/registro.html">Registrate</a>
+        </nav>
+      </header>
+  <main class="containerForm" id="containerForm">
+    <h1>Iniciar sesión</h1>
+    <form action="#" method="post" id="formLogin">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required>
+
+      <p class="leyenda">¿Aún no tienes una cuenta? <a href="/registro.html">Registrarse</a></p>
+
+      <button id="submit" type="submit" class="btn">Iniciar sesión</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            &copy; 2024 Proyecto Codo a Codo - Equipo 10. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img src="/images/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com" target="_blank"
+                ><img src="/images/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank"
+                ><img src="/images/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://web.whatsapp.com/" target="_blank"
+                ><img src="/images/whatsapp.png" alt="whatsapp web"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/login.js"></script>
+</body>
+</html>

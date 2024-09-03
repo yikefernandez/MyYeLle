@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envia tus Packetes a cualquier destino</title>
+    <link rel="stylesheet" href="/css/formEncomienda.css" />
+    <link rel="shortcut icon" href="/images/ico-paquete.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta property="og:title" content="Ye-LLe Envios" />
+    <meta property="og:type" content="Web de envios a todo el Mundo" />
+    <meta property="og:description" content="Envia tus paquetes a donde lo necesites, rapido y seguro."/>
+    <meta property="og:image" content="https://enviosyelle.netlify.app/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="title">
+        <a href="index.html"><img src="/images/YelleNav.png" alt="Icono" /></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/about.html">Quienes somos</a>
+        <a href="/contacto.html">Contactanos</a>
+        <a href="/login.html">Iniciar sessión</a>
+      </nav>
+    </header>
+    <h2>Datos de Envio</h2>
+    <form action="link" method="post" target="_blank">
+
+        <fieldset>
+            <legend>Encomienda</legend>
+        <label for="ENVIAR">Como queres enviar</label>
+        <select name="ENVIAR">
+            <option >Retiro en domicilio</option>
+            <option >Retiro en agencia</option>
+        </select>
+        <label for="name">Codigo Postal retiro</label>
+        <input type="text" id="name" name="name" size="10" placeholder="Ingrese su C.P. aquí...">
+        <label for="name">Codigo Postal envio</label>
+        <input type="text" id="name" name="name" size="10" placeholder="Ingrese su C.P. aquí..."><br><br>
+        <label for="ENVIAR">Describi tu envio</label><br><br>
+        <label for="ENVIAR">BULTOS</label><br><br>
+        <label for="number">Cantidad:</label>
+        <input type="number" name="number" id="number" max="99" aria-setsize="3">
+        <label for="number">Peso (Max 50 kg):</label>
+        <input type="number" name="number" id="number" max="50" aria-setsize="3">
+        <label for="number">Alto (cm):</label>
+        <input type="number" name="number" id="number" max="99" aria-setsize="3"><br><br>
+        <label for="number">Ancho (cm):</label>
+        <input type="number" name="number" id="number" max="99" aria-setsize="3">
+        <label for="number">Profundidad (cm):</label>
+        <input type="number" name="number" id="number" max="50" aria-setsize="3">
+        <label for="number">Valor Declarado ($):</label>
+        <input type="number" name="number" id="number" max="99" aria-setsize="3"><br><br>
+        <p>Seleccione forma de Pago</p>
+        <input type="radio" name="pago" value="origen"checkbox>Origen
+        <input type="radio" name="pago" value="destino"checkbox>Destino
+        </fieldset><br><br>
+        <input type="submit" id="formEncomienda" value="ENVIAR">
+    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>&copy; 2024 Proyecto Codo a Codo - Equipo 10. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-md-right">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com" target="_blank"><img src="/images/facebook.png" alt="Facebook"></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="/images/whatsapp.png" alt="whatsapp web"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <script src="/js/formEncomienda.js"></script>
+    </body>
+</html>

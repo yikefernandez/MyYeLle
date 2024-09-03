@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envia tus Packetes a cualquier destino</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/ico-paquete.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta property="og:title" content="Ye-LLe Envios" />
+    <meta property="og:type" content="Web de envios a todo el Mundo" />
+    <meta property="og:description" content="Envia tus paquetes a donde lo necesites, rapido y seguro."/>
+    <meta property="og:image" content="https://enviosyelle.netlify.app/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="title">
+        <a href="index.html"><img src="/images/YelleNav.png" alt="Icono" /></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="barNav">
+        <a href="/index.html">Inicio</a>
+        <a href="/about.html">Quienes somos</a>
+        <a href="/contacto.html">Contactanos</a>
+        <a href="/login.html">Iniciar sesión</a>   
+      </nav>
+    </header>
+    <section class="section">
+      <div class="section-text">
+        <h1>
+          Con YeLLe...<br />
+          Ni Yendo ni llegando, ya estamos con vos
+        </h1>
+        <p>
+          Envía tus paquetes de manera rápida y segura con nuestro servicio de
+          envíos. Desde documentos importantes hasta grandes cargamentos, nos
+          encargamos de llevar tus artículos a su destino con eficiencia y
+          cuidado. ¡Descubre cómo podemos facilitar tus envíos hoy mismo!
+        </p>
+        <div class="section-btn">
+          <a href="/formEncomienda.html" class="section-btn-link">Envia hoy!</a>
+        </div>
+      </div>
+      <div class="section-img">
+        <img src="/images/repartidor.webp" alt="Imagen de repartidor" />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <img src="/images/tracking.png" alt="Tracking" />
+        <h2>Tracking</h2>
+        <p>
+          En tiempo real rastreamos tus paquetes, desde el retiro hasta la
+          entrega.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="/images/insurance.png" alt="Insurance" />
+        <h2>Insurance</h2>
+        <p>Protege tus envios con comodas opciones de seguros adicionales.</p>
+      </div>
+      <div class="feature">
+        <img src="images/options.png" alt="Options" />
+        <h2>Multiple Shipping Options</h2>
+        <p>
+          Selecciona sobre una gran variedad de tipos de envios que se adapten a
+          tus necesidades.
+        </p>
+      </div>
+    </section>
+
+    <section class="costs-container">
+      <div class="card" style="background-image: url('/images/auto.webp')">
+        <div class="card-content">
+          <i class="fas fa-car"></i>
+          <h2>Auto</h2>
+          <p>$1000 - $2000</p>
+          <p>Ideal para paquetes de tamaño medio y entrega rápida.</p>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('/images/moto.webp')">
+        <div class="card-content">
+          <i class="fas fa-motorcycle"></i>
+          <h2>Moto</h2>
+          <p>$500 - $1000</p>
+          <p>Ideal para paquetes pequeños/medianos y entregas rápidas.</p>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('/images/combi.webp')">
+        <div class="card-content">
+          <i class="fas fa-bus"></i>
+          <h2>Combi</h2>
+          <p>$2000 - $3000</p>
+          <p>
+            Ideal para paquetes medianos/grandes y entregas en zonas remotas.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('/images/Camion.webp')">
+        <div class="card-content">
+          <i class="fas fa-truck"></i>
+          <h2>Camión</h2>
+          <p>$3000 - $5000</p>
+          <p>Ideal para paquetes muy grandes y entregas en zonas remotas.</p>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('/images/avion.webp')">
+        <div class="card-content">
+          <i class="fas fa-plane"></i>
+          <h2>Avión</h2>
+          <p>$5000 - $10000</p>
+          <p>Ideal para entregas urgentes y envíos internacionales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dolar">
+      <p >Precio del Dolar cripto hoy : $ <span id="dolar_hoy">0</span></p>
+      <p >Ejemplo envío en avion de $5000, en dolar cripto oficial hoy: USD <span id="precio_dolar">0</span></p>
+    </section>
+    
+    <section class="testimonials">
+      <div class="testimonial">
+        <img src="/images/testimonial.png" alt="Avatar" />
+        <p>
+          "Llevo años utilizando esta paquetería y nunca he tenido ningún
+          problema. Su servicio es rápido, fiable y asequible."
+        </p>
+        <h3>Mario Castañeda</h3>
+      </div>
+      <div class="testimonial">
+        <img src="/images/testimonial.png" alt="Avatar" />
+        <p>
+          "Me impresionó lo fácil que era enviar un paquete con esta paquetería.
+          El proceso fue sencillo y el precio muy razonable".
+        </p>
+        <h3>Julia Ramirez</h3>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              &copy; 2024 Proyecto Codo a Codo - Equipo 10. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><img src="/images/facebook.png" alt="Facebook"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com" target="_blank"
+                  ><img src="/images/twitter.png" alt="Twitter"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank"
+                  ><img src="/images/instagram.png" alt="Instagram"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://web.whatsapp.com/" target="_blank"
+                  ><img src="/images/whatsapp.png" alt="whatsapp web"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/registroLogin.js"></script>
+    <script src="./js/apiDolar.js"></script>
+    <script>
+      /*----- se llama a la funcion con $5000 y los ID de span "dolar_hoy" y "precio dolar" -----------------*/
+      convertir_dolar("dolar_hoy", 5000, "precio_dolar");
+    </script>
+  </body>
+</html>
